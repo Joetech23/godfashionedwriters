@@ -1,3 +1,8 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
 .claude/
 .DS_Store
 Thumbs.db

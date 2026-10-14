@@ -21,9 +21,9 @@
   --purple-tint: #F1EAF8;
   --on-purple-muted: #D9CCEA;
 
-  --sans: 'Montserrat', sans-serif;
-  --serif: 'Source Serif 4', serif;
-  --mono: 'JetBrains Mono', monospace;
+  --sans: var(--font-montserrat), 'Montserrat', sans-serif;
+  --serif: var(--font-serif), 'Source Serif 4', serif;
+  --mono: var(--font-mono), 'JetBrains Mono', monospace;
 
   --max: 1240px;
   --gutter: 32px;
@@ -310,7 +310,7 @@ a:hover { color: var(--purple); }
   border-radius: 50%;
   align-items: center; justify-content: center; justify-self: center;
 }
-.stories__copy { display: flex; flex-direction: column; gap: 24px; }
+.stories__copy { margin: 0; display: flex; flex-direction: column; gap: 24px; }
 .stories blockquote {
   margin: 0;
   font-family: var(--serif);
