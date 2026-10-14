@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import heroPhoto from '@/assets/hero-writer.jpg';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 import Subscribe from '@/components/Subscribe';
@@ -32,8 +34,15 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="placeholder hero__media" role="img" aria-label="Photo placeholder: author at work or book launch">
-              <span>photo · author at work / book launch</span>
+            <div className="hero__media">
+              <Image
+                src={heroPhoto}
+                alt="A young woman in a purple jumper writing in a notebook at her desk"
+                fill
+                priority
+                sizes="(max-width: 760px) 100vw, 560px"
+                placeholder="blur"
+              />
             </div>
           </div>
         </header>
